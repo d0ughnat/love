@@ -85,10 +85,10 @@ export default function NoPage() {
 
           <div className="space-y-4 mb-6">
             <blockquote className="text-lg font-medium text-blue-200">
-              "Even rejected love carries cursed energy..."
+              Even rejected love carries cursed energy...
             </blockquote>
-            <blockquote className="text-base text-blue-300 italic">"拒絶された愛にも呪力が宿る..."</blockquote>
-            <blockquote className="text-sm text-gray-400 italic">"But maybe... there's still hope?"</blockquote>
+            <blockquote className="text-base text-blue-300 italic">拒絶された愛にも呪力が宿る...</blockquote>
+            <blockquote className="text-sm text-gray-400 italic">But maybe... theres still hope?</blockquote>
           </div>
 
           <Link href="/love-letter">

@@ -137,12 +137,12 @@ export default function LoveLetterPage() {
           {/* Love quotes */}
           <div className="space-y-4 mb-6">
             <blockquote className="text-lg font-medium text-gray-200 italic">
-              "Even in the darkest domains, your light guides me home"
+              Even in the darkest domains, your light guides me home
             </blockquote>
 
-            <blockquote className="text-base text-purple-300 italic">"愛は最強の呪術"</blockquote>
+            <blockquote className="text-base text-purple-300 italic">愛は最強の呪術</blockquote>
 
-            <blockquote className="text-sm text-gray-300 italic">"Love is the strongest cursed technique"</blockquote>
+            <blockquote className="text-sm text-gray-300 italic">Love is the strongest cursed technique</blockquote>
           </div>
 
           {/* Question */}

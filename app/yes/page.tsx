@@ -85,9 +85,9 @@ export default function YesPage() {
 
           <div className="space-y-4 mb-6">
             <blockquote className="text-xl font-bold text-pink-200">
-              "Our cursed energies are now bound together forever!"
+              Our cursed energies are now bound together forever!
             </blockquote>
-            <blockquote className="text-lg text-pink-300 italic">"私たちの呪力は永遠に結ばれました"</blockquote>
+            <blockquote className="text-lg text-pink-300 italic">私たちの呪力は永遠に結ばれました</blockquote>
           </div>
 
           <p className="text-sm text-pink-400 font-medium animate-pulse">

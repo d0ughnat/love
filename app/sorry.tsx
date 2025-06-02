@@ -2,49 +2,15 @@
 
 import type React from "react"
 
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Zap, Eye, Flame, ArrowRight, Heart } from "lucide-react"
+import { Zap, Eye, Flame, Heart } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
 // Flower component for animation
-const CursedFlower = ({ style }: { style: React.CSSProperties }) => (
-  <div className="absolute pointer-events-none animate-float-up" style={style}>
-    <div className="relative">
-      <Heart className="text-red-500 w-4 h-4" />
-      <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-purple-500/30 to-red-500/30 rounded-full blur-sm"></div>
-    </div>
-  </div>
-)
-
 export default function Component() {
-  const [showEffect, setShowEffect] = useState(false)
-  const [flowers, setFlowers] = useState<React.CSSProperties[]>([])
 
-  // Handle button click
-  const handleClick = () => {
-    setShowEffect(true)
-
-    // Create 15 flowers with random positions
-    const newFlowers = Array.from({ length: 15 }, () => ({
-      left: `${Math.random() * 80 + 10}%`,
-      top: `${Math.random() * 20 + 60}%`,
-      animationDuration: `${Math.random() * 2 + 2}s`,
-      animationDelay: `${Math.random() * 0.5}s`,
-      transform: `scale(${Math.random() * 1 + 0.5}) rotate(${Math.random() * 360}deg)`,
-      opacity: Math.random() * 0.5 + 0.5,
-    }))
-
-    setFlowers(newFlowers)
-
-    // Hide effect after animation completes
-    setTimeout(() => {
-      setShowEffect(false)
-      setFlowers([])
-    }, 4000)
-  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-black flex items-center justify-center p-4 relative overflow-hidden">
@@ -75,12 +41,6 @@ export default function Component() {
       {/* Domain expansion effect */}
       <div className="absolute inset-0 bg-gradient-radial from-transparent via-purple-900/20 to-transparent animate-pulse"></div>
 
-      {/* I love you effect */}
-
-      {/* Flower animations */}
-      {flowers.map((style, index) => (
-        <CursedFlower key={index} style={style} />
-      ))}
 
       <Card className="w-full max-w-md bg-black/80 backdrop-blur-sm border-2 border-red-500/50 shadow-2xl rounded-3xl overflow-hidden relative">
         {/* Cursed energy border effect */}
@@ -107,7 +67,7 @@ export default function Component() {
                 <div className="relative">
                   <Image
                     src="/cat.png"
-                    alt="Cursed cat spirit"
+                    alt="sorry "
                     width={200}
                     height={200}
                     className="mx-auto rounded-xl object-contain shadow-lg"
